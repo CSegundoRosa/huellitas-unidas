@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*body*/
+body { 
+    font-family: "Poppins", sans-serif;
+    background-color: #A4DFE0;
+}
+
+/*header*/
+header {
+    position: sticky;
+    top: 0px;
+    background-color: #AAFF72;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+
+.nav-bar {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 20px;
+    /*text-align: right;*/
+    background-color: #AAFF72;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-bar ul li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/*main section index*/
+.carrusel-inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.texto-carrusel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.testimonios-adoptantes {
+    text-align: center;
+    background-color: #38A3A5;
+    padding: 60px;
+}
+
+.conoce-huellitas { 
+    background-color: #A4DFE0;
+    display: flex;
+    /*flex-direction: column;*/
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/*.conoce-huellitas-img {
+    display: flex;
+    justify-content: right;
+    height: auto;
+    width: 25%;
+    margin-left: 50%;
+}*/
+
+.conoce-huellitas-txt { 
+    color: black;
+    /* margin-left: 30px; */
+    text-align: center;
+    padding: 20px;
+}
+
+.formas-ayudar { 
+    background-color: #A4DFE0;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* .formas-ayudar-img {
+    display: flex;
+    justify-content: right;
+    height: auto;
+    width: 25%;
+    margin-left: 50%;
+} */
+
+.formas-ayudar-txt { 
+    color: black;
+    /* margin-left: 30px; */
+    text-align: center;
+    padding: 20px;
+}
+
+/* .conoce-huellitas-btn { 
+    background-color: #AAFF72; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+} */
+
+/*main section sobre-nosotros*/
+
+.quienes-somos { 
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.quienes-somos div {
+    padding: 30px;
+}
+
+/* main contacto*/
+
+.formulario {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    width: 480px;
+    flex-direction: column;
+    padding: 100px;
+}
+
+/*main huellitas*/
+
+.huellitas-adopcion { 
+    display: flex;
+    padding: 30px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.huellitas-adopcion div {
+    border: 1px solid #38A3A5;
+    height: 450px;
+    background-color: #38A3A5;
+}
+
+.huellitas-adopcion h1 {
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.huellitas-adopcion div h3 {
+    color: white;
+    padding: 10px;
+}
+
+.huellitas-adopcion div a {
+    text-decoration: none;
+    border: 3px solid #A4DFE0;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.huellitas-adopcion div img {
+    width: 250px;
+    height: auto;
+    padding: 15px;
+
+}
+
+/*footer*/
+
+footer {
+    font-size: 1.0rem;
+    padding: 20px;
+    margin-top: 0px;
+    background-color: #AAFF72;
+    text-align: center;
+    
+}
+
+footer ul { 
+    text-align: center;
+}
+
+footer ul li { 
+    display: inline-block;
+    margin: 0px 15px;
+}
