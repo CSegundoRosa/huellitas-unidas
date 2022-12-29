@@ -55,6 +55,11 @@ header img {
     padding: 60px;
 }
 
+.testimonios-adoptantes h3 {
+    font-size: 1.3rem;
+    margin-left: 100px;
+    margin-right: 100px;
+}
 
 .conoce-huellitas-grid { 
     background-color: #A4DFE0;
@@ -73,6 +78,11 @@ header img {
     padding: 20px;
     grid-area: "conoce-huellitas-txt";
 
+}
+
+.conoce-huellitas-txt p {
+    font-size: 1.3rem;
+    font-weight: 900;
 }
 
 .conoce-huellitas-img {
@@ -102,6 +112,11 @@ header img {
     text-align: center;
     padding: 20px;
     grid-area: "formas-ayudar-txt";
+}
+
+.formas-ayudar-txt p {
+    font-size: 1.3rem;
+    font-weight: 900;
 }
 
 .formas-ayudar-img {
