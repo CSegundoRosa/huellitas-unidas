@@ -49,53 +49,70 @@ header img {
     color: white;
 }
 
-.texto-carrusel {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: center;
-}
-
 .testimonios-adoptantes {
     text-align: center;
     background-color: #38A3A5;
     padding: 60px;
 }
 
-.conoce-huellitas { 
+
+.conoce-huellitas-grid { 
     background-color: #A4DFE0;
-    display: flex;
-    /*flex-direction: column;*/
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "conoce-huellitas-txt conoce-huellitas-img";
+    align-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 
 .conoce-huellitas-txt { 
     color: black;
-    /* margin-left: 30px; */
     text-align: center;
     padding: 20px;
+    grid-area: "conoce-huellitas-txt";
+
 }
 
-.formas-ayudar { 
+.conoce-huellitas-img {
+    grid-area: "conoce-huellitas-img";
+}
+
+.conoce-huellitas-img img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.formas-ayudar-grid { 
     background-color: #A4DFE0;
-    display: flex;
-    /* flex-direction: column; */
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "formas-ayudar-txt formas-ayudar-img";
+    align-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 
 .formas-ayudar-txt { 
     color: black;
-    /* margin-left: 30px; */
     text-align: center;
     padding: 20px;
+    grid-area: "formas-ayudar-txt";
+}
+
+.formas-ayudar-img {
+    grid-area: "formas-ayudar-img";
+}
+
+.formas-ayudar-img img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    vertical-align: middle;
 }
 
 /*main section sobre-nosotros*/
@@ -174,11 +191,23 @@ footer {
     
 }
 
-footer ul { 
-    text-align: center;
+footer ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 footer ul li { 
+    list-style: none;
+    text-decoration: none;
     display: inline-block;
     margin: 0px 15px;
+} 
+
+footer ul li a {
+    font-size: 2rem;
+}
+
+footer ul li a:hover {
+    color: grey;
 }
