@@ -226,3 +226,131 @@ footer ul li a {
 footer ul li a:hover {
     color: grey;
 }
+
+footer p{
+    margin-bottom: 0px;
+}
+
+/*------------------MEDIA QUERIES------------------*/
+
+
+/*index*/
+
+@media screen and (max-width:700px) {
+    
+    /*carrousel testimonios adoptantes*/
+    .testimonios-adoptantes {
+        padding: 30px;
+    }
+
+    .testimonios-adoptantes h2 {
+        font-size: 1.3rem;
+    }
+    
+    .testimonios-adoptantes h3 {
+        font-size: 1rem;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .testimonios-adoptantes p {
+        font-size: 0.8rem;
+    }
+
+    /*conoce huellitas grid*/
+    .conoce-huellitas-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "conoce-huellitas-txt"
+        "conoce-huellitas-img";
+    }
+
+    .conoce-huellitas-img img{
+        width: 100%;
+        height: 340px;
+    }
+
+    .conoce-huellitas-txt {
+        padding: 60px;
+    }
+
+    /*formas ayudar grid*/
+    .formas-ayudar-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "formas-ayudar-txt"
+        "formas-ayudar-img";
+    }
+
+    .formas-ayudar-img img{
+        width: 100%;
+        height: 340px;
+    }
+
+    .formas-ayudar-txt {
+        padding: 40px;
+        background-color: #38A3A5;
+    }
+
+    /*footer*/
+    footer h3 {
+        font-size: 1.17rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    
+    /*carrousel testimonios adoptantes*/
+    .testimonios-adoptantes {
+        padding: 15px;
+    }
+
+    .testimonios-adoptantes h2 {
+        font-size: 1rem;
+    }
+    
+    .testimonios-adoptantes h3 {
+        font-size: 0.8rem;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .testimonios-adoptantes p {
+        font-size: 0.8rem;
+    }
+
+    /*conoce huellitas grid*/
+    .conoce-huellitas-img img{
+        width: 100%;
+        height: 290px;
+    }
+
+    .conoce-huellitas-txt {
+        padding: 40px;
+    }
+
+    .conoce-huellitas-txt p {
+        font-size: 1rem;
+    }
+
+    /*formas ayudar grid*/
+    .formas-ayudar-img img{
+        width: 100%;
+        height: 290px;
+    }
+
+    .formas-ayudar-txt {
+        padding: 20px;
+        background-color: #38A3A5;
+    }
+
+    .formas-ayudar-txt p {
+        font-size: 1rem;
+    }
+}
