@@ -9,7 +9,7 @@
 /*body*/
 body { 
     font-family: "Poppins", sans-serif;
-    background-color: #A4DFE0;
+    background-color: #f8f8f8;
 }
 
 /*header*/
@@ -33,7 +33,6 @@ header img {
     font-size: 1.3rem;
     font-weight: 600;
     padding: 10px;
-    /*text-align: right;*/
     background-color: #AAFF72;
     width: 100%;
 }
@@ -51,7 +50,7 @@ header img {
 
 .testimonios-adoptantes {
     text-align: center;
-    background-color: #38A3A5;
+    background-color: #A4DFE0;
     padding: 60px;
 }
 
@@ -62,7 +61,7 @@ header img {
 }
 
 .conoce-huellitas-grid { 
-    background-color: #A4DFE0;
+    background-color: #f8f8f8;
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     grid-template-rows: 1fr;
@@ -70,6 +69,18 @@ header img {
     grid-template-areas: "conoce-huellitas-txt conoce-huellitas-img";
     align-content: center;
     align-items: center;
+}
+
+.conoce-huellitas-grid a {
+    text-decoration: none;
+    border: 3px solid #38A3A5;
+    border-radius: 25px;
+    background-color: #38A3A5;
+    padding: 5px;
+}
+
+.conoce-huellitas-grid a:hover{
+        background-color: #A4DFE0;
 }
 
 .conoce-huellitas-txt { 
@@ -107,6 +118,18 @@ header img {
     align-items: center;
 }
 
+.formas-ayudar-grid a {
+    text-decoration: none;
+    border: 3px solid #38A3A5;
+    border-radius: 25px;
+    background-color: #38A3A5;
+    padding: 5px;
+}
+
+.formas-ayudar-grid a:hover{
+    background-color: #f8f8f8;
+}
+
 .formas-ayudar-txt { 
     color: black;
     text-align: center;
@@ -132,15 +155,51 @@ header img {
 
 /*main section sobre-nosotros*/
 
-.quienes-somos { 
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.sobre-nosotros-h1 {
+    text-align: center;
+    padding: 30px;
+    font-weight: 600;
 }
 
-.quienes-somos div {
+.quienes-somos-grid { 
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 300px 300px 300px;
+    grid-template-areas: 
+    "quienes-somos-txt sobre-nosotros-img"
+    "donde-somos-txt sobre-nosotros-img"
+    "como-trabajamos-txt sobre-nosotros-img";
+    align-items: center;
+}
+
+.quienes-somos-grid div {
     padding: 30px;
+}
+
+.quienes-somos-txt {
+    grid-area: quienes-somos-txt;
+}
+
+.donde-somos-txt {
+    grid-area: donde-somos-txt;
+}
+.como-trabajamos-txt {
+    grid-area: como-trabajamos-txt;
+}
+
+.sobre-nosotros-img {
+    grid-area: sobre-nosotros-img;
+    align-items: flex-end;
+}
+
+.sobre-nosotros-img img {
+    width: auto;
+    height: 850px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* main contacto*/
@@ -161,38 +220,36 @@ header img {
     display: flex;
     padding: 30px;
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
-.huellitas-adopcion div {
-    border: 1px solid #38A3A5;
-    height: 450px;
-    background-color: #38A3A5;
-}
-
-.huellitas-adopcion h1 {
+.huellitas-adopcion-h1 {
     text-align: center;
     justify-content: center;
     padding: 30px;
+    font-weight: 600;
 }
 
-.huellitas-adopcion div h3 {
-    color: white;
-    padding: 10px;
+.card {
+    margin: 0px 15px 30px 15px;
+}
+
+.card-title{
+    font-weight: 600;
 }
 
 .huellitas-adopcion div a {
     text-decoration: none;
-    border: 3px solid #A4DFE0;
+    border: 3px solid #38A3A5;
     border-radius: 25px;
+    background-color: #38A3A5;
     padding: 5px;
 }
 
-.huellitas-adopcion div img {
-    width: 250px;
-    height: auto;
-    padding: 15px;
-
+.huellitas-adopcion div a:hover{
+    background-color: #A4DFE0;
 }
 
 /*footer*/
@@ -232,12 +289,53 @@ footer p{
 }
 
 /*------------------MEDIA QUERIES------------------*/
+@media screen and (max-width:1310px) {
+    
+    /*sobre-nosotros*/
+    .sobre-nosotros-h1 {
+        font-size: 2rem;
+    }
 
+    .quienes-somos-grid h2 {
+        font-size: 1.6rem;
+    }
+}
 
-/*index*/
+@media screen and (max-width:1130px) {
+    /*sobre-nosotros*/
+    .quienes-somos-grid div {
+        padding: 20px;
+    }
+
+    .quienes-somos-grid p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:900px) {
+    /*sobre-nosotros*/
+    .quienes-somos-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "quienes-somos-txt"
+        "donde-somos-txt"
+        "como-trabajamos-txt";
+    }
+
+    .quienes-somos-grid img {
+    display: none;
+    }
+}
 
 @media screen and (max-width:700px) {
-    
+
+    /*navbar*/
+    header img {
+        width: 80px;
+        height: 80px;
+    }
+    /*index*/
     /*carrousel testimonios adoptantes*/
     .testimonios-adoptantes {
         padding: 30px;
@@ -291,7 +389,12 @@ footer p{
 
     .formas-ayudar-txt {
         padding: 40px;
-        background-color: #38A3A5;
+    }
+
+    /* Huellitas */
+
+    .huellitas-adopcion-h1 {
+        font-size: 1.6rem;
     }
 
     /*footer*/
@@ -305,6 +408,12 @@ footer p{
 }
 
 @media screen and (max-width:450px) {
+
+    /*navbar*/
+    header img {
+        width: 50px;
+        height: 50px;
+    }
     
     /*carrousel testimonios adoptantes*/
     .testimonios-adoptantes {
@@ -352,5 +461,11 @@ footer p{
 
     .formas-ayudar-txt p {
         font-size: 1rem;
+    }
+
+    /* Huellitas */
+
+    .huellitas-adopcion-h1 {
+        font-size: 1.3rem;
     }
 }
