@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Asociación Huellitas Unidas</title>
 </head>
@@ -13,67 +14,77 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <img src="../img/logo.png" alt="logo huellitas unidas">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="../index.html" class="nav-link" aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./sobre-nosotros.html" class="nav-link" href="#">Sobre Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./huellitas.html" class="nav-link" href="#">Huellitas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./forma-parte.html" class="nav-link">Forma Parte</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./contacto.html" class="nav-link">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
+                <a href="../index.html">
+                    <img src="../img/logo.png" alt="logo huellitas unidas">
+                </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="../index.html" class="nav-link" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./sobre-nosotros.html" class="nav-link" href="#">Sobre Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./huellitas.html" class="nav-link" href="#">Huellitas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./forma-parte.html" class="nav-link">Forma Parte</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./contacto.html" class="nav-link">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
             </div>
         </nav>
     </header>
     <main>
-        <div class="quienes-somos">
-            <div>
-                <h1>Hay muchas formas de colaborar con nosotros, ¡Conocelas!</h1>
+        <h1 class="forma-parte-h1">Hay muchas formas de colaborar con nosotros, ¡Conocelas!</h1>
+            <div class="forma-parte-grid ">
+                <div data-aos="fade-right" 
+                data-aos-duration="1000"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" 
+                class="forma-parte-info">
+                    <h2>Doná</h2>
+                    <p>Aceptamos donaciones mediante Transferencia Bancaria o Mercado Pago. Las mismas son destinadas a la compra de insumos, comida, medicaciones y tratamientos de las Huellitas. También aceptamos donaciones de comida, frazadas, toallas, camitas, remedios. ¡Contactate con nosotros para coordinar la entrega!</p>
+                    <h2>Apadriná</h2>
+                    <p>Ser madrina o padrino significa realizar un aporte económico mensual destinado a la recuperación de uno o más ahijados. De esta forma contribuis a solventar el total o una parte de los gastos hasta que sea adoptado.</p>
+                    <h2>Sumate como Hogar de Tránsito</h2>
+                    <p>Ser hogar de tránsito implica darle un lugar temporal a un rescatado, donde pueda vivir durante su recuperación o hasta ser adoptado. El tiempo de tránsito es relativo según la disponibilidad del transitante y el caso particular. Pedimos un mínimo de 10 días inicialmente. TODOS los gastos generados por el animal en transito serán cubiertos por la asociación. Sí queres postularte hace click <a href="https://docs.google.com/forms/d/e/1FAIpQLSf7iqqLxjlWYr2souK5-_GTV27oHF9_L9BPbNsrbP0HNJgnvQ/viewform">acá</a>.</p>
+                    <h2>Trasladá</h2>
+                    <p>Si contás con vehículo y un poco de tiempo, podes ayudarnos trasladando a las Huellitas a diversos lugares o actividades necesarias para su recuperación. ¡Contactate con nosotros para coordinar!</p>
+                    <h2>Fotografiá - Redes</h2>
+                    <p>Sabemos que tanto la realización de fotografías como el manejo de redes ocupan un lugar muy importante para llear acabo las actividades diarias como la difusión, que nos permite tener mayor alcance y comunicación con nuestros seguidores. Si contás con conocimiento básico en fotografía, edición de video y/o fotos para sesiones de futuras adoopciones tambien podes sumarte al equipo de AHU.</p>
+                    <h2>Sumate como voluntari@</h2>
+                    <p>Para formar parte de AHU como voluntari@, por favor completá el siguiente <a href="https://docs.google.com/forms/d/e/1FAIpQLScZPLA0ab_DFaskWwHZKKBjoYarVgEHeB6opHnJuDPHxyghDQ/viewform">formulario</a>.</p>
+                    <h2>Proyecto Mascotas Superhéroes</h2>
+                    <p>Desde AHU queremos ayudar y contribuir a salvar más vidas. Iniciamos este proyecto para conformar una base de datos de posibles mascotas aptas para ser donantes de sangre. Si tu mascota cumple con los requisitos necesarios para ser donante podes sumarte a la lista. En caso de que algún animal necesite una donacion, recurriremos a nuestros Superhéroes para encontrar el adecuado y disponible para ayudar.</p>
+                </div>
+                <div data-aos="fade-right" 
+                data-aos-duration="1000"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+                class="forma-parte-donaciones">
+                    <h3>A través de Transferencia Bancaria</h3>
+                    <p>TITULAR: Albarracin Cintia</p>
+                    <p>CBU: 0170058940000032560235</p>
+                    <p>Alias: HUELLITAS.UNIDAS</p>
+                    <p>Banco Francés</p>
+                    <h3>A través de Mercado Pago</h3>
+                    <p>Enviar dinero a: huellitasunidas.contacto@gmail.com</p>
+                    <p>CVU: 0000003100002663196870</p>
+                    <p>Alias: HUELLITASUNIDAS</p>
+                    <h3>Merchandising</h3>
+                    <p>Podes colaborar comprando nuestros productos de merchandising. ¡Tu compra salva vidas!</p>
+                    <a href="https://huellitasunidas.empretienda.com.ar/" class="btn">HUELLITIENDA</a>
+                </div>
             </div>
-            <div>
-                <h2>Doná</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </div>
-            <div>
-                <h2>Apadriná</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </div>
-            <div>
-                <h2>Sumate como Hogar de Tránsito</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </div>
-            <div>
-                <h2>Trasladá</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </div>
-            <div>
-                <h2>Fotografiá</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </div>
-            <div>
-                <h2>Sumate como voluntari@</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </div>
-            <div>
-                <h2>Proyecto Mascotas Superhéroes</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </div>
-        </div>
     </main>
     <footer>
         <div class="redes-sociales">
@@ -90,5 +101,9 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
