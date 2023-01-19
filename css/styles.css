@@ -264,7 +264,7 @@ header img {
     padding: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr;
     align-items: flex-start;
 }
 
@@ -469,7 +469,11 @@ footer p{
     .forma-parte-h1{
         font-size: 1.6rem;
     }
-    
+
+    .forma-parte-grid{
+        grid-template-columns: 1fr;
+    }
+
     .forma-parte-grid h2 {
         font-size: 1.3rem;
     }
