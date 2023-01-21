@@ -134,7 +134,7 @@ header img {
     color: black;
     text-align: center;
     padding: 20px;
-    grid-area: "formas-ayudar-txt";
+    grid-area: formas-ayudar-txt;
 }
 
 .formas-ayudar-txt p {
@@ -143,7 +143,7 @@ header img {
 }
 
 .formas-ayudar-img {
-    grid-area: "formas-ayudar-img";
+    grid-area: formas-ayudar-img;
 }
 
 .formas-ayudar-img img {
@@ -302,7 +302,7 @@ header img {
 
 .formulario-txt {
     text-align: center;
-    grid-area: "formulario-txt";
+    grid-area: formulario-txt;
     display: flex;
     height: 500px;
     flex-direction: column;
@@ -330,6 +330,7 @@ header img {
     align-items: center;
     padding: 30px;
     background: #A4DFE0;
+    grid-area: formulario;
 }
 
 .formulario input{
@@ -463,6 +464,14 @@ footer p{
         font-size: 0.9rem;
     }
 
+    /*contacto*/
+    .formulario-txt h2 {
+        font-size: 1.5rem;
+    }
+    .formulario-txt h3 {
+        font-size: 1.3rem;
+    }
+
 }
 
 @media screen and (max-width:700px) {
@@ -554,6 +563,19 @@ footer p{
 
     .forma-parte-grid p {
         font-size: 0.9rem;
+    }
+
+    /*contacto*/
+    .formulario-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "formulario-txt"
+        "formulario";
+    }
+
+    .formulario-txt {
+        height: auto;
     }
 
 
