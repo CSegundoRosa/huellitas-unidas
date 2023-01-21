@@ -43,31 +43,35 @@
         </nav>
     </header>
     <main>
-        <div class="formulario">
-            <h1>¡Contactate con nosotros!</h1>
-            <form>
-                <fieldset>
-                    <legend>Te vamos a estar respondiendo en breve</legend>
-                    <input type="text" placeholder="Nombre y Apellido" name="nombre">
-                    <input type="email" placeholder="E-mail" name="email">
-                    <input type="text" placeholder="Teléfono de contacto" name="telefono">
-                    <!--Menu de opciones para la consulta-->
-                    <select name="tipo-consulta">
-                        <option value="-">Selecciona tu consulta</option>
-                        <option value="estado-adopcion">Estado del formulario de adopción</option>
-                        <option value="donaciones">Quiero hacer una donación</option>
-                        <option value="transito">Quiero sumarme como hogar de tránsito</option>
-                        <option value="voluntario">Quiero ser voluntario</option>
-                        ><option value="otrss">Otros</option>
-                    </select>
-                    <!-- Textarea de comentarios-->
-                    <textarea name="comentarios" placeholder="Escribí acá"></textarea>
-                    <!--Botones-->
-                    <div class="boton-enviar">
-                        <input type="submit" value="Enviar">
-                    </div>
-                </fieldset>
-            </form>
+        <div class="formulario-grid">
+            <div class="formulario-txt">
+                <h1>¿Te quedó alguna duda? ¿Querés coordinar la entrega de insumos? ¿Querés saber más sobre lo que hacemos?</h1>
+                <h2>¡Escribinos! En breve te vamos a estar respondiendo</h2>
+            </div>
+            <div class="formulario">
+                <form>
+                    <fieldset>
+                        <input type="text" placeholder="Nombre y Apellido" name="nombre">
+                        <input type="email" placeholder="E-mail" name="email">
+                        <input type="text" placeholder="Teléfono de contacto" name="telefono">
+                        <!--Menu de opciones para la consulta-->
+                        <select name="tipo-consulta">
+                            <option value="-">Selecciona tu consulta</option>
+                            <option value="estado-adopcion">Estado del formulario de adopción</option>
+                            <option value="donaciones">Quiero hacer una donación</option>
+                            <option value="transito">Quiero sumarme como hogar de tránsito</option>
+                            <option value="voluntario">Quiero ser voluntario</option>
+                            ><option value="otrss">Otros</option>
+                        </select>
+                        <!-- Textarea de comentarios-->
+                        <textarea name="comentarios" placeholder="Escribí acá"></textarea>
+                        <!--Botones-->
+                        <div class="boton-enviar">
+                            <button type="submit" class="btn">Enviar</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
         </div>
     </main>
     <footer>
