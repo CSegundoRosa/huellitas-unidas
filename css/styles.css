@@ -311,12 +311,14 @@ header img {
     padding: 30px;
 }
 
-.formulario-txt h1{
+.formulario-txt h2{
     font-weight: 500;
 }
 
-.formas-ayudar-txt h2{
+.formulario-txt h3{
     font-weight: 200;
+    margin-top: 10px;
+    padding: 20px;
 }
 
 .formulario{
