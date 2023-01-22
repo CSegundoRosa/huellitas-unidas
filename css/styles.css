@@ -361,6 +361,11 @@ header img {
     width: 100%
 }
 
+.boton-enviar {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .boton-enviar button {
     border: 3px solid #38A3A5;
     border-radius: 25px;
@@ -380,6 +385,10 @@ footer {
     background-color: #AAFF72;
     text-align: center;
     
+}
+
+footer a {
+    text-decoration: none;
 }
 
 footer ul {
