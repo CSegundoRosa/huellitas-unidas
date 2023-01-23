@@ -1,0 +1,25 @@
+/*HUELLITAS*/
+.huellitas-adopcion-h1 {
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+    font-weight: 600;
+}
+    
+.huellitas-adopcion{
+    @include flex(flex, space-around, center, row);
+    .card{
+        margin: 0px 15px 30px 15px;
+        .card-body{
+            .card-title{
+                font-weight: 600;
+            }
+            a{
+                @extend %button;
+                &:hover{
+                    background-color: #A4DFE0;
+                }
+            }
+        }
+    }
+}

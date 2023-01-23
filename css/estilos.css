@@ -1,0 +1,86 @@
+/*LISTAS*/
+/*MAPAS*/
+/*EXTENDS*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+.huellitas-adopcion .card .card-body a {
+  text-decoration: none;
+  border: 3px solid #38A3A5;
+  border-radius: 25px;
+  background-color: #38A3A5;
+  padding: 5px; }
+
+/*MIXINS*/
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f8f8; }
+
+/*HEADER*/
+header {
+  position: sticky;
+  top: 0px;
+  background-color: #AAFF72;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100; }
+  header .navbar {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 10px;
+    background-color: #AAFF72;
+    width: 100%; }
+    header .navbar div .navbar-collapse {
+      flex-direction: row-reverse; }
+  header nav div a img {
+    height: 80px;
+    width: 80px;
+    float: left; }
+
+/*HUELLITAS*/
+.huellitas-adopcion-h1 {
+  text-align: center;
+  justify-content: center;
+  padding: 30px;
+  font-weight: 600; }
+
+.huellitas-adopcion {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-direction: row; }
+  .huellitas-adopcion .card {
+    margin: 0px 15px 30px 15px; }
+    .huellitas-adopcion .card .card-body .card-title {
+      font-weight: 600; }
+    .huellitas-adopcion .card .card-body a:hover {
+      background-color: #A4DFE0; }
+
+/*FOOTER*/
+footer {
+  font-size: 1.0rem;
+  padding: 20px;
+  margin-top: 0px;
+  background-color: #AAFF72;
+  text-align: center; }
+  footer ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    footer ul li {
+      list-style: none;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0px 15px; }
+    footer ul a {
+      font-size: 2rem; }
+      footer ul a:hover {
+        color: #A4DFE0; }
+  footer p {
+    margin-bottom: 0px; }
+  footer a {
+    text-decoration: none; }

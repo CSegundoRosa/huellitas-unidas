@@ -1,0 +1,32 @@
+/*FOOTER*/
+
+footer {
+    font-size: 1.0rem;
+    padding: 20px;
+    margin-top: 0px;
+    background-color: nth($colores, 1 );
+    text-align: center;
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        li {
+            list-style: none;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0px 15px;
+        }
+        a {
+            font-size: 2rem;
+            &:hover{
+                color: nth($colores, 2 );
+            }
+        }
+    }
+    p {
+        margin-bottom: 0px;
+    }
+    a {
+        text-decoration: none;
+    }
+}

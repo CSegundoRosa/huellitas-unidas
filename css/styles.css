@@ -36,7 +36,8 @@ header img {
     background-color: #AAFF72;
     width: 100%;
 }
-.navbar-expand-lg .navbar-collapse {
+
+.navbar-collapse {
     flex-direction: row-reverse;
 }
 

@@ -1,0 +1,25 @@
+{
+  "name": "huellitas-unidas",
+  "version": "1.0.0",
+  "description": "sitio web de asociacion huellitas unidas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CSegundoRosa/huellitas-unidas.git"
+  },
+  "author": "Constanza Segundo Rosa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CSegundoRosa/huellitas-unidas/issues"
+  },
+  "homepage": "https://github.com/CSegundoRosa/huellitas-unidas#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
