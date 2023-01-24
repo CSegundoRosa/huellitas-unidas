@@ -1,0 +1,40 @@
+/*FORMA PARTE*/
+.forma-parte-h1 {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.forma-parte-grid {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: flex-start;
+    .forma-parte-info {
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .forma-parte-donaciones {
+        padding: 30px;
+        border: 3px solid #A4DFE0;
+        border-radius: 30px;
+        background-color: #A4DFE0;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        a {
+            @extend %button;
+            &:hover{
+                background-color: #f8f8f8;
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+/*SOBRE NOSOTROS*/
+.sobre-nosotros-h1{
+    text-align: center;
+    padding: 30px;
+    font-weight: 600;
+}
+
+.quienes-somos-grid{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 300px 300px 300px;
+    grid-template-areas: 
+    "quienes-somos-txt sobre-nosotros-img"
+    "donde-somos-txt sobre-nosotros-img"
+    "como-trabajamos-txt sobre-nosotros-img";
+    align-items: center;
+    div {
+        padding: 30px;
+    }  
+    .quienes-somos-txt {
+        grid-area: quienes-somos-txt;
+    }
+    .donde-somos-txt {
+        grid-area: donde-somos-txt;
+    }
+    .como-trabajamos-txt {
+        grid-area: como-trabajamos-txt;
+    }
+    .sobre-nosotros-img {
+        grid-area: sobre-nosotros-img;
+        align-items: flex-end;
+        img {
+            width: auto;
+            height: 850px;
+            object-fit: cover;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

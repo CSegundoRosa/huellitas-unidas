@@ -1,0 +1,56 @@
+/*CONTACTO*/
+.formulario-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "formulario-txt formulario";
+    padding: 40px;
+    margin-top: 3rem;
+    .formulario-txt{
+        @include flex(flex, center, center, column);
+        grid-area: formulario-txt;
+        height: 500px;
+        align-items: center;
+        padding: 30px;
+        h2{
+            font-weight: 500;
+        }
+        h3{
+            font-weight: 200;
+            margin-top: 10px;
+            padding: 20px;
+        }
+    }
+    .formulario{
+        @include flex(flex, space-around, initial,column);
+        border: 3px solid nth($colores , 2 );
+        align-items: center;
+        padding: 30px;
+        background: nth($colores , 2 );
+        grid-area: formulario;
+        border-radius: 30px;
+        input{
+            @extend %input;
+            border-radius: 30px;
+        }
+        select{
+            @extend %input;
+            border-radius: 30px;
+        }
+        textarea{
+            @extend %input;
+            border-radius: 10px;
+            resize: none;
+        }
+        .boton-enviar {
+            display: flex;
+            flex-direction: row-reverse;
+            button{
+                @extend %button;
+                &:hover{
+                    background-color: #f8f8f8;
+                }
+            }
+        }
+    }
+}
